@@ -1,0 +1,99 @@
+\usepackage[utf8x]{inputenc} % Windows
+\usepackage[spanish]{babel} % Windows
+
+%\usepackage{ucs} % Para ubuntu
+%\usepackage[utf8x]{inputenc} % Para ubuntu
+%\usepackage[activeacute,spanish]{babel} % Para ubuntu
+
+\usepackage{anysize}
+\marginsize{4.25cm}{2cm}{2cm}{2cm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{flowfram}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{setspace}
+\usepackage{wrapfig}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage{titlesec}
+\usepackage{alltt}
+\usepackage{tocbibind}
+%\usepackage{caption}
+%\usepackage{subcaption}
+\usepackage{subfig}
+\usepackage{subfloat}
+
+%\usepackage[activeacute,spanish,es-tabla]{babel}
+\usepackage{graphicx}
+
+% Top margin above chapter
+\usepackage{titlesec}
+\titlespacing*{\chapter}{0pt}{-70pt}{20pt}
+\titleformat{\chapter}[display]{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%codigo de color
+\usepackage{color}
+\definecolor{gray51}{rgb}{0.51,0.51,0.51}
+\definecolor{gray71}{rgb}{0.71,0.71,0.71}
+\newcommand{\HRule}{\rule{\linewidth}{.4mm}}
+
+\usepackage{listings}
+\lstset{
+	tabsize=4,
+	language=Octave,
+        basicstyle=\scriptsize,
+        %upquote=true,
+        aboveskip={1.5\baselineskip},
+        columns=fixed,
+	numbers=left,
+        showstringspaces=false,
+        extendedchars=true,
+        breaklines=true,
+        prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	frame=false,
+        showtabs=false,
+        showspaces=false,
+        showstringspaces=false,
+        identifierstyle=\ttfamily,
+        keywordstyle=\color[rgb]{0,0,1},
+        commentstyle=\color[rgb]{0.133,0.545,0.133},
+        stringstyle=\color[rgb]{0.627,0.126,0.941},
+%	language=matlab
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% para insertar codigo usar:
+%\lstinputlisting[title=\textbf{Código Fuente: archivo}]{codigo.m}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\addtolength{\voffset}{-2.5 cm}
+\addtolength{\hoffset}{-2 cm}
+\setlength{\marginparwidth}{0 cm}
+\addtolength{\headsep}{+1.5cm}
+\setlength{\evensidemargin}{0cm}
+
+%ancho texto
+\setlength{\textwidth}{6.7 in}
+
+%largo texto
+\setlength{\textheight}{8.7 in}
+
+\setlength{\headheight}{48pt}
+
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\pagestyle{fancy}
+\fancyhead[l]{\footnotesize Universidad de Chile - Facultad de Ciencias Físicas y Matemáticas\\
+EL4003- Señales y Sistemas II\\
+Prof. Manuel Duarte, Prof. Jorge Silva\\Prof. Aux. Alejandro Veragua\\  Semestre Otoño 2017}
+\fancyhead[r]{\includegraphics[scale=0.33]{fcfm.png}}
+\fancyfoot[r]{\thepage}
+\fancyfoot[c]{}

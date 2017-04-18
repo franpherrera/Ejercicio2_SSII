@@ -1,0 +1,51 @@
+\newcommand{\portadagrupo}[9]{
+\begin{titlepage}
+
+% Upper part of the page
+ 
+
+{
+\begin{wrapfigure}{l}{.8cm}
+\vspace{-.7cm}
+\includegraphics[width=4.7cm]{fcfm}
+\end{wrapfigure}
+
+\textsc{\color{red}\hspace{3cm}Departamento de Ingeniería Eléctrica}\\
+\textsc{\color{gray51}\hspace{3.6cm}Facultad de Ciencias Físicas y Matemáticas}\\
+\textsc{\color{gray51}\hspace{3.6cm}Universidad de Chile}\\
+\textsc{\color{gray51}\hspace{3.6cm}\small El3001 - Análisis y Diseño de Circuitos Eléctricos}\\
+}
+% T�tulo
+\begin{center}
+~\\[4.5cm]
+{\color{gray71}\textsc{#3}}
+\HRule~ \\[0.4cm]
+{ \Huge \textup \bfseries  #1}\\[0.4cm]
+{ \Large \textup{#2}}\\[0.2cm]
+\HRule ~\\[2cm]
+\end{center}
+\begin{minipage}{.5\textwidth}
+~
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+\begin{flushright}
+\begin{tabular}{l}
+\emph{Profesor:} \\
+{\small Pablo Estévez}\\[0.3cm]
+\emph{Auxiliar:} \\
+{\small Joaquín Díaz Peña}\\[0.3cm]
+\emph{Ayudantes:} \\
+{\small #4}\\
+{\small #5}\\
+{\small #6}\\[0.3cm]
+\emph{Integrantes:}\\
+{\small #7}\\
+{\small #8}\\
+{\small #9}\\[.3cm]
+\emph{Fecha:}\\
+{\small \today}
+\end{tabular}
+\end{flushright}
+\end{minipage}
+\end{titlepage}
+}
